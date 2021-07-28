@@ -1,7 +1,21 @@
 var request = require('request');
-const jsonData = require('./Data/Data.json');
+const jsonData= require('./Data/Data.json')
+// var glob = require('glob'); 
+// glob('./Data/*.json', function (err, files) { 
+//     if (err) { 
+//         console.log(err); 
+//     } else { 
+//         // a list of paths to json files in the current working directory
+//         console.log(files); 
+//     }
+ 
+// });
+// const fl=glob.glob("./Data/*.json")
+// console.log(fl)
+// const jsonData = require(fl);
 const chalk=require('chalk');
 var env=require('./Data/env.js');
+const requireAll = require('require-all');
 const baseurl=env.baseurl;
 var strToken=null;
 var options = {

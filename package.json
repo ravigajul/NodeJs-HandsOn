@@ -4,13 +4,17 @@
   "description": "",
   "main": "GetToken.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node GetToken.js",
+    "pretest": "echo Hi!",
+    "posttest": "echo bye!"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chalk": "^4.1.1",
+    "glob": "^7.1.7",
     "nodemon": "^2.0.12",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "require-all": "^3.0.0"
   }
 }
